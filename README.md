@@ -1,1 +1,1 @@
-# Mean_App
+# MEAN_App
