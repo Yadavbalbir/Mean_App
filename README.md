@@ -126,18 +126,18 @@
 
 
 ## POST New Movie
-<img src="./Screenshot/add_movie.png">
-<img src="./Screenshot/submit_movie.png">
+<img src="./Screenshots/add_movie.png">
+<img src="./Screenshots/submit_movie.png">
 
 ## DELETE Movie
-<img src="./Screenshot/Delete.png">
-<img src="./Screenshot/confirm_delete.png">
-<img src="./Screenshot/after_delete.png">
+<img src="./Screenshots/Delete.png">
+<img src="./Screenshots/confirm_delete.png">
+<img src="./Screenshots/after_delete.png">
 
 ## Edit Movie
-<img src="./Screenshot/before_edit.png">
-<img src="./Screenshot/during_edit.png">
-<img src="./Screenshot/after_edit.png">
+<img src="./Screenshots/before_edit.png">
+<img src="./Screenshots/during_edit.png">
+<img src="./Screenshots/after_edit.png">
 
 
 
