@@ -40,9 +40,13 @@ router.get('/:id', (req,res)=>{
 //post api
 router.post('/', (req, res)=>{
     let mv = new movie({
-        name : req.body.name,
-        position :req.body.position,
-        department: req.body.department
+        title : req.body.title,
+        desc :req.body.desc,
+        rating: req.body.rating,
+        duration: req.body.duration,
+        genre: req.body.genre,
+        likes: req.body.likes,
+        language: req.body.language
     });
     mv.save((err, doc)=>{
         if(err){
@@ -59,9 +63,13 @@ router.put('/:id', (req,res)=>{
     if(objectId.isValid(req.params.id)){
 
          let mv ={
-        name : req.body.name,
-        position :req.body.position,
-        department: req.body.department
+        title : req.body.title,
+        desc :req.body.desc,
+        rating: req.body.rating,
+        duration: req.body.duration,
+        genre: req.body.genre,
+        likes: req.body.likes,
+        language: req.body.language
     };
 
         movie.findByIdAndUpdate(req.params.id, {$set: mv}, {new: true}, (err,doc)=>{

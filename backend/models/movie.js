@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
 const movie = mongoose.model('movie',{
-    name : {type:String},
-    position : {type:String},
-    department: {type:String}
+    title : {type:String},
+    desc : {type:String},
+    rating: {type:String},
+    duration: {type:String},
+    genre: {type:String},
+    likes: {type:String},
+    language: {type:String}
 
 })
 
