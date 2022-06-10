@@ -130,13 +130,23 @@
 <img src="./Screenshots/submit_movie.png">
 
 ## DELETE Movie
+- ### before delete
 <img src="./Screenshots/Delete.png">
+
+- ### Confirm Delete
 <img src="./Screenshots/confirm_delete.png">
+
+- ### after Deleting
 <img src="./Screenshots/after_delete.png">
 
 ## Edit Movie
+- ### before editing
 <img src="./Screenshots/before_edit.png">
+
+- ### during editing
 <img src="./Screenshots/during_edit.png">
+
+- ### after editing
 <img src="./Screenshots/after_edit.png">
 
 
