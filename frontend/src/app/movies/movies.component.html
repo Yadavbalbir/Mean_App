@@ -79,7 +79,27 @@
                                             id="floatingInput" placeholder="Language">
                                         <label for="language">Language</label>
                                     </div>
+                                    <!-- Radio Button  -->
+                                    <h6 style="margin-left:0px ;">Have you watched this movie?</h6>
+                                    <div class="form-floating py-2 px-5 form-group w-25">
+                                        
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="watched"
+                                                formControlName="watched" id="exampleRadios1" value="Yes">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="watched"
+                                                formControlName="watched" id="exampleRadios2" value="No">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
 
+                                    <!-- Radio button ends -->
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -105,9 +125,10 @@
         <div *ngFor="let movie of mv">
             <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg">
-                    
+
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <span class="badge bg-primary pt-2 mb-3 text-center" style="width: 100px;">{{movie.genre}}</span>
+                        <span class="badge bg-primary pt-2 mb-3 text-center"
+                            style="width: 100px;">{{movie.genre}}</span>
                         <h2 class="pt-2 mb-4 display-6 lh-1 fw-bold">{{movie.title}}</h2>
                         <p>{{movie.desc}}</p>
                         <div class="border-bottom mb-2 py-2">
@@ -155,13 +176,15 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <a class="dropdown-item" href="#">{{movie.watched}}</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>

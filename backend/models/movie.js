@@ -7,7 +7,8 @@ const movie = mongoose.model('movie',{
     duration: {type:String},
     genre: {type:String},
     likes: {type:String},
-    language: {type:String}
+    language: {type:String},
+    watched: {type: String}
 
 })
 

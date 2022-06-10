@@ -31,7 +31,8 @@ export class MoviesComponent implements OnInit {
       duration: ["182min"],
       genre: ["action"],
       likes: ["18222"],
-      language: ["English"]
+      language: ["English"],
+      watched: ['']
     })
   }
   getAllMovies(){

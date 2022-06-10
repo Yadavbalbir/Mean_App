@@ -46,7 +46,8 @@ router.post('/', (req, res)=>{
         duration: req.body.duration,
         genre: req.body.genre,
         likes: req.body.likes,
-        language: req.body.language
+        language: req.body.language,
+        watched: req.body.watched
     });
     mv.save((err, doc)=>{
         if(err){
@@ -69,7 +70,8 @@ router.put('/:id', (req,res)=>{
         duration: req.body.duration,
         genre: req.body.genre,
         likes: req.body.likes,
-        language: req.body.language
+        language: req.body.language,
+        watched: req.body.watched
     };
 
         movie.findByIdAndUpdate(req.params.id, {$set: mv}, {new: true}, (err,doc)=>{

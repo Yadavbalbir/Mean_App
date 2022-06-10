@@ -6,5 +6,6 @@ export interface Movie{
     duration: string;
     genre: string;
     likes: string;
-    language: string
+    language: string;
+    watched: string;
 }
